@@ -11,8 +11,28 @@
   }
 }
 
+
+
+@keyframes rotate-and-scale {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.5);
+  }
+  /* 75% {
+    transform: rotate(300deg) scale(1);
+  } */
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
 .rotate-animation {
-  animation: spin infinite 3s linear;
+  animation: rotate-and-scale infinite 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 :root {
